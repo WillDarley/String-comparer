@@ -51,6 +51,7 @@
             this.tbxStringX.Name = "tbxStringX";
             this.tbxStringX.Size = new System.Drawing.Size(238, 40);
             this.tbxStringX.TabIndex = 1;
+            this.tbxStringX.TextChanged += new System.EventHandler(this.tbxStringX_TextChanged);
             // 
             // tbxStringY
             // 
