@@ -22,10 +22,10 @@ namespace String_comparer
             ValidationResult checker = new ValidationResult();
             if(checker.ValidateUserInput(tbxStringX.Text))
             {
-                lblResult.Text = "String X is valid" + checker.Message;
+                lblResultStringX.Text = "String X is valid" + checker.Message;
             } else
             {
-                lblResult.Text = "String X is invalid " + checker.Message;
+                lblResultStringX.Text = "String X is invalid " + checker.Message;
             }
         }
     }
