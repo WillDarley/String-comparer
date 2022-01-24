@@ -11,7 +11,6 @@ namespace String_comparer
         public bool ValidationSuccess;
         public string Message;
 
-
         /// <summary>
         /// Check user input for precence check, length check (1024 characters) and patter check
         /// </summary>
@@ -20,13 +19,12 @@ namespace String_comparer
 
         public bool ValidateUserInput(string userInput)
         {
-              if(userInput.Length == 0)
+            if (userInput.Length == 0)
             {
-                Message = "precence check failed";
+                Message = "presence check failed";
                 return false;
-
             }
-
+            else return true;
       }
     }
 }
