@@ -20,10 +20,11 @@ namespace String_comparer
         private void tbxStringX_TextChanged(object sender, EventArgs e)
         {
             ValidationResult checker = new ValidationResult();
-            checker.validateUserInput(tbxStringX.Text);
+            checker.ValidateUserInput(tbxStringX.Text);
             {
                 lblResult.Text = "String X is valid" + checker.Message;
-            } else 
+            }
+        } else
             {
                 lblResult.Text = "String X is invalid" + checker.Message;
             }

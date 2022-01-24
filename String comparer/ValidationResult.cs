@@ -16,19 +16,17 @@ namespace String_comparer
         /// Check user input for precence check, length check (1024 characters) and patter check
         /// </summary>
         /// <param name="userInput">data entered by the user</param>
-        /// <returns>true if all checks pass. Message attrivute decribes any failed tests</returns>
+        /// <returns>true if all checks pass. Message attribute decribes any failed tests</returns>
 
-        // precence check
-        if(userInput.Length == 0)
+        public bool ValidateUserInput(string userInput)
+        {
+              if(userInput.Length == 0)
             {
-            Message = "You need at least 1 character";
-            return false;
+                Message = "precence check failed";
+                return false;
+
             }
 
-
-        public bool validateUserInput(string userInput)
-        {
-            return false;
-        }
+      }
     }
 }
